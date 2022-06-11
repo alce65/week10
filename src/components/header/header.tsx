@@ -1,7 +1,12 @@
 import './header.css';
-export function Header({ appTitle }: { appTitle: string }) {
+export function Header({
+    appTitle,
+    children,
+}: {
+    appTitle: string;
+    children: JSX.Element;
+}) {
     const logo = './logo.svg';
-
     return (
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
@@ -14,6 +19,7 @@ export function Header({ appTitle }: { appTitle: string }) {
             >
                 Learn React
             </a>
+            {children}
         </header>
     );
 }
