@@ -1,6 +1,6 @@
 // Hooks de React
 
-import { Dispatch, SetStateAction, useState } from 'react';
+import { useState } from 'react';
 
 // useState()
 
